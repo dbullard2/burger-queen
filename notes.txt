@@ -1,0 +1,11 @@
+<router-link to="/about">About</router-link>
+
+//notes
+    - burger name ideas:
+        - royale with cheese
+
+//todo
+    - make burgers same size on menu
+    - come up with burger name ideas
+
+//future features
