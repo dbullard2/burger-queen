@@ -10,6 +10,7 @@
         </div>
         <div class="nav-right">
           <h5>??</h5>
+          <div class="space"></div>
           <font-awesome-icon icon="shopping-bag" style="font-size: 20px" />
         </div>
       </div>
@@ -24,7 +25,7 @@
         <img src="../assets/burgers/classic.png" alt="" class="u-max-full-width" />
       </div>
       <div class="two">
-        <h3>The Menu</h3>
+        <h3 style="text-align: center">The Menu</h3>
         <div class="menu-list">
           <h5>Burgers</h5>
           <h5>Drinks</h5>
@@ -40,7 +41,7 @@
             />
             <h5>The Classic</h5>
             <div class="bottom">
-              <h5 class="price">$???</h5>
+              <h5 class="price">$10.99</h5>
               <font-awesome-icon icon="shopping-bag" class="big" />
             </div>
           </div>
@@ -48,7 +49,7 @@
             <img src="../assets/burgers/krabby-patty.png" alt="" class="u-max-full-width" />
             <h5>The Krabby Patty</h5>
             <div class="bottom">
-              <h5 class="price">$???</h5>
+              <h5 class="price">$8.99</h5>
               <font-awesome-icon icon="shopping-bag" class="big" />
             </div>
           </div>
@@ -88,15 +89,15 @@
             <img src="../assets/burgers/5.png" alt="" class="u-max-full-width" />
             <h5>The Morning After</h5>
             <div class="bottom">
-              <h5 class="price">$???</h5>
+              <h5 class="price">$9.99</h5>
               <font-awesome-icon icon="shopping-bag" class="big" />
             </div>
           </div>
           <div class="menu-item">
             <img src="../assets/burgers/7.png" alt="" class="u-max-full-width" />
-            <h5>7</h5>
+            <h5>Ol' Dirty Breakfast</h5>
             <div class="bottom">
-              <h5 class="price">$???</h5>
+              <h5 class="price">$9.99</h5>
               <font-awesome-icon icon="shopping-bag" class="big" />
             </div>
           </div>
@@ -127,6 +128,45 @@
         <img src="../assets/mobile/play-store.png" alt="" />
       </div>
     </div>
+    <div class="line"></div>
+    <div class="container">
+      <div class="four">
+        <ul>
+          <li><h5 style="color: #14ff6e; font-weight: bold;">Food</h5></li>
+          <li><h5>Our History</h5></li>
+          <li><h5>The Team</h5></li>
+          <li><h5>Values</h5></li>
+          <li><h5></h5></li>
+        </ul>
+        <ul>
+          <li><h5 style="color: #14ff6e; font-weight: bold;">Careers</h5></li>
+          <li><h5>Education Opportunities</h5></li>
+          <li><h5>Employee Perks</h5></li>
+          <li><h5>Working With Us</h5></li>
+          <li><h5>Apply Now</h5></li>
+        </ul>
+        <ul>
+          <li><h5 style="color: #14ff6e; font-weight: bold;">Contact Us</h5></li>
+          <li><h5>Website Feedback</h5></li>
+          <li><h5>Mobile App Feedback</h5></li>
+          <li><h5>Restaurant Feedback</h5></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© Burger Queen, 2020</p>
+      <div class="footer-middle">
+        <p>Privacy</p>
+        <p>Terms & Conditions</p>
+        <p>Accessibility</p>
+      </div>
+      <div class="socials">
+        <font-awesome-icon :icon="['fab', 'twitter']" class="big" />
+        <font-awesome-icon :icon="['fab', 'facebook-f']" class="big" />
+        <font-awesome-icon :icon="['fab', 'youtube']" class="big" />
+        <font-awesome-icon :icon="['fab', 'instagram']" class="big" />
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -155,6 +195,10 @@ window.addEventListener('load', function() {
 
 <style scoped>
 /* Global */
+ul {
+  list-style: none;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -190,7 +234,10 @@ window.addEventListener('load', function() {
 
 .nav-right {
   display: flex;
-  margin-right: 60px;
+}
+
+.space {
+  width: 15px;
 }
 
 /*Section One*/
@@ -224,6 +271,7 @@ window.addEventListener('load', function() {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 50px;
+  grid-row-gap: 20px;
 }
 
 .menu-item {
@@ -273,5 +321,46 @@ window.addEventListener('load', function() {
 
 .download img {
   max-width: 20%;
+}
+
+.line {
+  border-bottom: 3px solid #14ff6e;
+  width: 99vw;
+  height: 3px;
+  margin-top: 30px;
+}
+
+.four {
+  margin-top: 30px;
+  color: #acacac;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  justify-items: center;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  justify-items: center;
+}
+
+.footer-middle {
+  display: flex;
+}
+
+.footer-middle p {
+  margin-right: 30px;
+}
+
+.footer .big {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.socials {
+  display: flex;
 }
 </style>

@@ -10,5 +10,7 @@
     - compress images
     - for iphone loading mockup, make 'burger' the proper font weight
     - scale 'get it on google play' up a bit
+    - only import the icons i need from font awesome
+    - make socials change to their colour when hovered and change the cursor to pointer
 
 //future features
