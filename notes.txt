@@ -7,5 +7,8 @@
 //todo
     - make burgers same size on menu
     - come up with burger name ideas
+    - compress images
+    - for iphone loading mockup, make 'burger' the proper font weight
+    - scale 'get it on google play' up a bit
 
 //future features

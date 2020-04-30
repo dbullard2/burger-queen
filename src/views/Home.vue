@@ -69,6 +69,22 @@
             </div>
           </div>
           <div class="menu-item">
+            <img src="../assets/burgers/6.png" alt="" class="u-max-full-width" />
+            <h5>6</h5>
+            <div class="bottom">
+              <h5 class="price">$???</h5>
+              <font-awesome-icon icon="shopping-bag" class="big" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="../assets/burgers/8.png" alt="" class="u-max-full-width" />
+            <h5>8</h5>
+            <div class="bottom">
+              <h5 class="price">$???</h5>
+              <font-awesome-icon icon="shopping-bag" class="big" />
+            </div>
+          </div>
+          <div class="menu-item">
             <img src="../assets/burgers/5.png" alt="" class="u-max-full-width" />
             <h5>The Morning After</h5>
             <div class="bottom">
@@ -76,7 +92,39 @@
               <font-awesome-icon icon="shopping-bag" class="big" />
             </div>
           </div>
+          <div class="menu-item">
+            <img src="../assets/burgers/7.png" alt="" class="u-max-full-width" />
+            <h5>7</h5>
+            <div class="bottom">
+              <h5 class="price">$???</h5>
+              <font-awesome-icon icon="shopping-bag" class="big" />
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 style="text-align: center">Our App</h3>
+      <div class="three">
+        <div>
+          <div>
+            <h5 style="color: #14ff6e; font-weight: bold;">Food</h5>
+            <h5>Get nutritional information about our products</h5>
+          </div>
+        </div>
+        <div class="mock">
+          <img src="../assets/mobile/x-loading.png" alt="" />
+          <img src="../assets/mobile/x-main.png" alt="" />
+        </div>
+        <div>
+          <h5 style="color: #14ff6e; font-weight: bold;">Specials</h5>
+          <h5>Learn about all of the specials we have going on</h5>
+        </div>
+      </div>
+      <div class="download">
+        <img src="../assets/mobile/app-store.png" alt="" />
+        <img src="../assets/mobile/play-store.png" alt="" />
       </div>
     </div>
   </div>
@@ -192,5 +240,38 @@ window.addEventListener('load', function() {
   font-size: 20px;
   color: #14ff6e;
   float: right;
+}
+
+.three {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-basis: 33.3%;
+  flex-grow: 0;
+}
+
+.mock {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url('../assets/blob-shape.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mock img {
+  height: 90%;
+}
+
+.download {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.download img {
+  max-width: 20%;
 }
 </style>
