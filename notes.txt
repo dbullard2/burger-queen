@@ -7,10 +7,17 @@
 //todo
     - make burgers same size on menu
     - come up with burger name ideas
-    - compress images
-    - for iphone loading mockup, make 'burger' the proper font weight
-    - scale 'get it on google play' up a bit
+    x compress images
+    x for iphone loading mockup, make 'burger' the proper font weight
+    x scale 'get it on google play' up a bit
     - only import the icons i need from font awesome
-    - make socials change to their colour when hovered and change the cursor to pointer
+    x make socials change to their colour when hovered and change the cursor to pointer
+    - compress drinks, deserts folder
+    - add change price for drinks, sides, deserts
+    - remove reflection from coffee cup
+    - get drink info from chick fil a 
+    - change component names in export default
+    - add hershey's sundae pie, https://www.burgerking.de/menu/2917, https://www.burgerking.de/menu/70, and apple pie from burger king to deserts menu
+    - try and find a good onion rings pic
 
 //future features

@@ -27,80 +27,13 @@
       <div class="two">
         <h3 style="text-align: center">The Menu</h3>
         <div class="menu-list">
-          <h5>Burgers</h5>
+          <h5 id="burgers">Burgers</h5>
           <h5>Drinks</h5>
           <h5>Sides</h5>
           <h5>Deserts</h5>
         </div>
         <div class="menu">
-          <div class="menu-item">
-            <img
-              src="../assets/burgers/classic (copy 1).png"
-              alt=""
-              class="u-max-full-width"
-            />
-            <h5>The Classic</h5>
-            <div class="bottom">
-              <h5 class="price">$10.99</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/krabby-patty.png" alt="" class="u-max-full-width" />
-            <h5>The Krabby Patty</h5>
-            <div class="bottom">
-              <h5 class="price">$8.99</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/3.png" alt="" class="u-max-full-width" />
-            <h5>3</h5>
-            <div class="bottom">
-              <h5 class="price">$???</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/4.png" alt="" class="u-max-full-width" />
-            <h5>4</h5>
-            <div class="bottom">
-              <h5 class="price">$???</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/6.png" alt="" class="u-max-full-width" />
-            <h5>6</h5>
-            <div class="bottom">
-              <h5 class="price">$???</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/8.png" alt="" class="u-max-full-width" />
-            <h5>8</h5>
-            <div class="bottom">
-              <h5 class="price">$???</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/5.png" alt="" class="u-max-full-width" />
-            <h5>The Morning After</h5>
-            <div class="bottom">
-              <h5 class="price">$9.99</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
-          <div class="menu-item">
-            <img src="../assets/burgers/7.png" alt="" class="u-max-full-width" />
-            <h5>Ol' Dirty Breakfast</h5>
-            <div class="bottom">
-              <h5 class="price">$9.99</h5>
-              <font-awesome-icon icon="shopping-bag" class="big" />
-            </div>
-          </div>
+          <Sides />
         </div>
       </div>
     </div>
@@ -161,10 +94,10 @@
         <p>Accessibility</p>
       </div>
       <div class="socials">
-        <font-awesome-icon :icon="['fab', 'twitter']" class="big" />
-        <font-awesome-icon :icon="['fab', 'facebook-f']" class="big" />
-        <font-awesome-icon :icon="['fab', 'youtube']" class="big" />
-        <font-awesome-icon :icon="['fab', 'instagram']" class="big" />
+        <font-awesome-icon :icon="['fab', 'twitter']" class="big twitter" />
+        <font-awesome-icon :icon="['fab', 'facebook-f']" class="big facebook" />
+        <font-awesome-icon :icon="['fab', 'youtube']" class="big youtube" />
+        <font-awesome-icon :icon="['fab', 'instagram']" class="big instagram" />
       </div>
     </footer>
   </div>
@@ -172,6 +105,17 @@
 
 <script>
 // @ is an alias to /src
+//import Burgers from '../components/Burgers';
+import Sides from '../components/Sides';
+
+export default {
+  name: 'Home',
+  components: {
+    //Burgers,
+    //Drinks,
+    Sides,
+  },
+};
 
 //sticky nav
 
@@ -193,7 +137,7 @@ window.addEventListener('load', function() {
 });
 </script>
 
-<style scoped>
+<style>
 /* Global */
 ul {
   list-style: none;
@@ -267,11 +211,12 @@ ul {
   display: flex;
   justify-content: space-evenly;
 }
-.menu {
+.burger-menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 20px;
+  width: 100%;
 }
 
 .menu-item {
@@ -360,7 +305,52 @@ footer {
   margin-right: 20px;
 }
 
+.footer .big:hover {
+  cursor: pointer;
+}
+
 .socials {
   display: flex;
+}
+
+.twitter:hover {
+  color: #1da1f3;
+}
+
+.facebook:hover {
+  color: #1778f2;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 </style>
